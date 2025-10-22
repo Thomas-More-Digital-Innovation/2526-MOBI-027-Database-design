@@ -1,0 +1,30 @@
+_id,Dof_Id,Dof_Name,JointT_Id,JointT_Name,type,Id,JointT_Title,Part_Id,Part_Title
+68e3bec9b850a9ba21abc114,1,Flexie(+)/Extensie(-)_Rug,7,Rug,HAS_DOF,,,,
+68e3bec9b850a9ba21abc115,2,Lateroflexie (Rechts(+)/Links(-))_Rug,7,Rug,HAS_DOF,,,,
+68e3bec9b850a9ba21abc116,3,Rotatie (Rechts(+)/Links(-))_Rug,7,Rug,HAS_DOF,,,,
+68e3bec9b850a9ba21abc117,4,Flexie(+)/Extensie(-)_Heup,6,Heup,HAS_DOF,,,,
+68e3bec9b850a9ba21abc118,5,Abductie(+)/Adductie(-)_Heup,6,Heup,HAS_DOF,,,,
+68e3bec9b850a9ba21abc119,6,Exo(+)/Endo(-)rotatie_Heup,6,Heup,HAS_DOF,,,,
+68e3bec9b850a9ba21abc11a,9,Flexie(+)/Extensie(-)_Nek,1,Nek,HAS_DOF,,,,
+68e3bec9b850a9ba21abc11b,10,Lateroflexie (Rechts(+)/Links(-))_Nek,1,Nek,HAS_DOF,,,,
+68e3bec9b850a9ba21abc11c,11,Rotatie (Rechts(+)/Links(-))_Nek,1,Nek,HAS_DOF,,,,
+68e3bec9b850a9ba21abc11d,,,1,,IS_CONNECTED_WITH,1,Nek,1,Hoofd
+68e3bec9b850a9ba21abc11e,,,1,,IS_CONNECTED_WITH,2,Nek,6,Romp
+68e3bec9b850a9ba21abc11f,,,6,,IS_CONNECTED_WITH,3,Heup,10,Bekken
+68e3bec9b850a9ba21abc120,,,6,,IS_CONNECTED_WITH,4,Heup,11,Bovenbeen
+68e3bec9b850a9ba21abc121,,,7,,IS_CONNECTED_WITH,5,Rug,6,Romp
+68e3bec9b850a9ba21abc122,,,7,,IS_CONNECTED_WITH,6,Rug,10,Bekken
+68e3bec9b850a9ba21abc123,,,8,,IS_CONNECTED_WITH,7,Knie,11,Bovenbeen
+68e3bec9b850a9ba21abc124,,,8,,IS_CONNECTED_WITH,8,Knie,12,Onderbeen
+68e3bec9b850a9ba21abc125,,,9,,IS_CONNECTED_WITH,9,Enkel,12,Onderbeen
+68e3bec9b850a9ba21abc126,,,9,,IS_CONNECTED_WITH,10,Enkel,9,Voet
+68e3bec9b850a9ba21abc127,,,10,,IS_CONNECTED_WITH,11,Schouder,5,Bovenarm
+68e3bec9b850a9ba21abc128,,,10,,IS_CONNECTED_WITH,12,Schouder,6,Romp
+68e3bec9b850a9ba21abc129,,,11,,IS_CONNECTED_WITH,13,Elleboog,4,Onderarm
+68e3bec9b850a9ba21abc12a,,,11,,IS_CONNECTED_WITH,14,Elleboog,5,Bovenarm
+68e3bec9b850a9ba21abc12b,,,12,,IS_CONNECTED_WITH,15,Pols,3,Hand
+68e3bec9b850a9ba21abc12c,,,12,,IS_CONNECTED_WITH,16,Pols,4,Onderarm
+68e3bec9b850a9ba21abc12d,,,13,,IS_CONNECTED_WITH,17,VoetGrond,9,Voet
+68e3bec9b850a9ba21abc12e,,,13,,IS_CONNECTED_WITH,18,VoetGrond,2,Ground
+68e3bec9b850a9ba21abc12f,,,14,,IS_CONNECTED_WITH,19,HandObject,3,Hand
+68e3bec9b850a9ba21abc130,,,14,,IS_CONNECTED_WITH,20,HandObject,8,Object
