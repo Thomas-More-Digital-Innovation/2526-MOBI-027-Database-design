@@ -1,23 +1,31 @@
 import csv
 import re
+
 import mysql.connector
 from mysql.connector import Error
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Database configuration
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',
-    'database': 'exoskeletons_test'
-}
+     'host': os.getenv('DB_HOST'),
+     'user': os.getenv('DB_USER'),
+     'password': os.getenv('DB_PASSWORD'),
+     'database': os.getenv('DB_NAME'),
+     'port': int(os.getenv('DB_PORT'))
+ }
 
 # CSV file paths - update these to match your file locations
 CSV_FILES = {
     'part1': 'neo4j_query_table_data_2025-10-15.csv',
     'part2': 'neo4j_query_table_data_2025-10-15(2).csv',
-    'part3': 'neo4j_query_table_data_2025-10-15(3).csv',
+    'part3': 'neo4j_query_table_data_2025-10-15(3).csv',  
     'part4': 'neo4j_query_table_data_2025-10-16.csv',
-    'part5': 'neo4j_query_table_data_2025-10-16(2).csv'
+    'part5': 'neo4j_query_table_data_2025-10-16(2).csv',
+    'part6': 'neo4j_query_table_data_2025-10-22.csv',
 }
 
 def parse_node(node_str):
@@ -439,6 +447,49 @@ def insert_gives_resistance_in(cursor, exo_id, dof_id, rel_props):
     
     cursor.execute(query, values)
 
+def insert_gives_postural_support_in(cursor, exo_id, dof_id, rel_props):
+    """Insert GIVES_POSTURAL_SUPPORT_IN relationship"""
+    query = """
+    INSERT INTO GIVES_POSTURAL_SUPPORT_IN (exoId, dofId, aim, direction, adjustable, 
+                                         mechanism, rangeAdjustable, sizeAdjustable,
+                                         minAngle, maxAngle,
+                                         lowerBoundMinAngle, lowerBoundMaxAngle,
+                                         upperBoundMinAngle, upperBoundMaxAngle)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    ON DUPLICATE KEY UPDATE
+        aim = VALUES(aim),
+        direction = VALUES(direction),
+        adjustable = VALUES(adjustable),
+        mechanism = VALUES(mechanism),
+        rangeAdjustable = VALUES(rangeAdjustable),
+        sizeAdjustable = VALUES(sizeAdjustable),
+        minAngle = VALUES(minAngle),
+        maxAngle = VALUES(maxAngle),
+        lowerBoundMinAngle = VALUES(lowerBoundMinAngle),
+        lowerBoundMaxAngle = VALUES(lowerBoundMaxAngle),
+        upperBoundMinAngle = VALUES(upperBoundMinAngle),
+        upperBoundMaxAngle = VALUES(upperBoundMaxAngle)
+    """
+    
+    values = (
+        exo_id,
+        dof_id,
+        rel_props.get('aim'),
+        int(rel_props.get('direction', 0)) if rel_props.get('direction') else None,
+        rel_props.get('adjustable'),
+        rel_props.get('mechanism'),
+        rel_props.get('rangeAdjustable'),
+        rel_props.get('sizeAdjustable'),
+        int(rel_props.get('minAngle', 0)) if rel_props.get('minAngle') else None,
+        int(rel_props.get('maxAngle', 0)) if rel_props.get('maxAngle') else None,
+        int(rel_props.get('lowerBoundMinAngle', 0)) if rel_props.get('lowerBoundMinAngle') else None,
+        int(rel_props.get('lowerBoundMaxAngle', 0)) if rel_props.get('lowerBoundMaxAngle') else None,
+        int(rel_props.get('upperBoundMinAngle', 0)) if rel_props.get('upperBoundMinAngle') else None,
+        int(rel_props.get('upperBoundMaxAngle', 0)) if rel_props.get('upperBoundMaxAngle') else None
+    )
+    
+    cursor.execute(query, values)
+
 def insert_has_aimtype(cursor, aim_id, aimtype_id):
     """Insert HAS_AIMTYPE relationship"""
     query = """
@@ -739,6 +790,40 @@ def process_part5(cursor, csv_file_path):
           f"TRANSFERS_FORCES_TO: {stats['transfers_to']}")
     return stats
 
+def process_part6(cursor, csv_file_path):
+    """Process Part 6: GIVES_POSTURAL_SUPPORT_IN"""
+    print("\n" + "="*60)
+    print("PROCESSING PART 6: Postural Support Relationships")
+    print("="*60)
+    
+    stats = {'rows': 0, 'gives_postural_support': 0}
+    
+    with open(csv_file_path, 'r', encoding='utf-8') as file:
+        csv_reader = csv.DictReader(file)
+        
+        for row in csv_reader:
+            stats['rows'] += 1
+            node_n = parse_node(row['n'])
+            relationship_r = parse_relationship(row['r'])
+            node_m = parse_node(row['m'])
+            
+            if not node_n or not relationship_r or not node_m:
+                continue
+            
+            rel_type = relationship_r['type']
+            rel_props = relationship_r['properties']
+            
+            if rel_type == 'GIVES_POSTURAL_SUPPORT_IN':
+                if node_n['type'] == 'Exo' and node_m['type'] == 'Dof':
+                    exo_id = insert_exo(cursor, node_n, update_mode=False)
+                    dof_id = insert_dof(cursor, node_m, update_mode=False)
+                    insert_gives_postural_support_in(cursor, exo_id, dof_id, rel_props)
+                    stats['gives_postural_support'] += 1
+    
+    print(f"✓ Part 6 Complete - Rows: {stats['rows']}, "
+          f"GIVES_POSTURAL_SUPPORT_IN: {stats['gives_postural_support']}")
+    return stats
+
 # ====================
 # MAIN EXECUTION
 # ====================
@@ -809,6 +894,16 @@ def main():
             print(f"⚠ Warning: {CSV_FILES['part5']} not found. Skipping Part 5.")
         except Exception as e:
             print(f"✗ Error in Part 5: {e}")
+            connection.rollback()
+        
+        # Process Part 6
+        try:
+            all_stats['part6'] = process_part6(cursor, CSV_FILES['part6'])
+            connection.commit()
+        except FileNotFoundError:
+            print(f"⚠ Warning: {CSV_FILES['part6']} not found. Skipping Part 6.")
+        except Exception as e:
+            print(f"✗ Error in Part 6: {e}")
             connection.rollback()
         
         # Final summary

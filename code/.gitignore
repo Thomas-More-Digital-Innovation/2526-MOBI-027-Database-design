@@ -1,0 +1,14 @@
+.vscode/
+
+# Python virtual environment
+venv/
+.venv/
+.env/
+
+# Environment variable files
+.env
+.env.*
+*.env
+
+# Node modules
+node_modules/

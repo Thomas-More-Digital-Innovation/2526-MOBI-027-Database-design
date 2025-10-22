@@ -1,10 +1,12 @@
-// import.js (CommonJS / werkt zonder "type":"module")
+// import.js (CommonJS / supports .env configuration)
+require("dotenv").config(); // Load environment variables
 const fs = require("fs");
 const { MongoClient } = require("mongodb");
 
-const MONGO_URI = "mongodb://localhost:27017";
-const DB_NAME = "neo4j_import_test_relations_split";
-const JSON_FILE = "./neo4j_query_table_data_2025-10-13.json";
+// Load configuration from environment variables or use defaults
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017";
+const DB_NAME = process.env.DB_NAME || "neo4j_import_test_relations_split";
+const JSON_FILE = process.env.JSON_FILE || "./neo4j_query_table_data_2025-10-13.json";
 
 async function run() {
   // 1) load file
@@ -14,7 +16,7 @@ async function run() {
   // 2) collect unique nodes per label
   const collections = {}; // label -> Map(identity -> doc)
   const relatiesByType = {}; // type -> array of relations
-  
+
   function saveNode(node) {
     if (!node) return;
     const label = (node.labels && node.labels[0]) || "Unknown";
@@ -49,7 +51,7 @@ async function run() {
         end: r.end,
         startElementId: r.startNodeElementId,
         endElementId: r.endNodeElementId,
-        properties: r.properties || {}
+        properties: r.properties || {},
       };
       relatiesByType[relationType].push(rela);
     }
@@ -63,7 +65,7 @@ async function run() {
     totalNodes += map.size;
   }
   console.log(`🧾 unieke nodes per collectie (voor import):`, nodeCounts);
-  
+
   console.log(`\n🔗 relaties per type:`);
   let totalRelations = 0;
   for (const [type, relations] of Object.entries(relatiesByType)) {
@@ -89,14 +91,16 @@ async function run() {
           replaceOne: {
             filter: { _id: doc._id },
             replacement: doc,
-            upsert: true
-          }
+            upsert: true,
+          },
         });
       }
 
       if (ops.length > 0) {
         const res = await coll.bulkWrite(ops, { ordered: false });
-        console.log(`✅ '${label}': upserted ${res.upsertedCount + res.modifiedCount} docs (ops: ${ops.length})`);
+        console.log(
+          `✅ '${label}': upserted ${res.upsertedCount + res.modifiedCount} docs (ops: ${ops.length})`
+        );
       } else {
         console.log(`ℹ️ '${label}': geen documenten om te importeren`);
       }
@@ -106,10 +110,10 @@ async function run() {
     console.log(`\n📦 Importeren van relatie collecties...`);
     for (const [relationType, relations] of Object.entries(relatiesByType)) {
       const relColl = db.collection(relationType);
-      
+
       // Clear old relations first for clean import
       await relColl.deleteMany({});
-      
+
       if (relations.length > 0) {
         // Create indexes for query performance
         try {
@@ -124,13 +128,22 @@ async function run() {
         // Insert all relationships of this type
         try {
           const res = await relColl.insertMany(relations, { ordered: false });
-          console.log(`✅ '${relationType}': inserted ${res.insertedCount} van ${relations.length}`);
+          console.log(
+            `✅ '${relationType}': inserted ${res.insertedCount} van ${relations.length}`
+          );
         } catch (err) {
           if (err && err.result && err.result.result) {
             const inserted = err.result.result.nInserted || 0;
-            console.log(`⚠️ '${relationType}' bulk insert fouten: ${err.writeErrors ? err.writeErrors.length : "unknown"}, succesvol: ${inserted}`);
+            console.log(
+              `⚠️ '${relationType}' bulk insert fouten: ${
+                err.writeErrors ? err.writeErrors.length : "unknown"
+              }, succesvol: ${inserted}`
+            );
           } else {
-            console.log(`⚠️ '${relationType}' fout tijdens insert:`, err.message || err);
+            console.log(
+              `⚠️ '${relationType}' fout tijdens insert:`,
+              err.message || err
+            );
           }
         }
 
@@ -148,7 +161,7 @@ async function run() {
   }
 }
 
-run().catch(err => {
+run().catch((err) => {
   console.error("FATALE FOUT:", err);
   process.exit(1);
 });
