@@ -1,0 +1,27 @@
+{
+  "_id": "Exo1",
+  "type": "Exo",
+  "properties": {
+    "name": "Finger curl exercise",
+    "difficulty": "medium"
+  },
+  "relations": [
+    {
+      "type": "ASSISTS_IN",
+      "endNode": "Dof1",
+      "amount": "+1",
+      "notes": "Supports flexion movements"
+    },
+    {
+      "type": "DOESNT_GO_WITH",
+      "endNode": "SKN1",
+      "amount": "1",
+      "reason": "Skin irritation risk"
+    },
+    {
+      "type": "HAS_AIM",
+      "endNode": "vinger",
+      "priority": "high"
+    }
+  ]
+}
