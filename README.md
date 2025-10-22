@@ -1,59 +1,93 @@
-# *MOBI - 027* Database Design  
+# Mobilab & Care - Jobtakels Project
 
-## Notities eerste meeting (22/09/2025)  
+## 📋 Project Overview
 
-### Data-import en context  
+This project is a continuation and enhancement of the **sense to eXion** initiative, now transitioning into the **Jobtakels** project. The goal is to revisit and improve the existing database infrastructure that stores information about exoskeletons, sensors, and risk assessment tools used to aid workplace movement and reduce physical strain on employees.
 
-De gegevens die nodig zijn voor dit project zijn momenteel beschikbaar in verschillende Excel-bestanden. Deze bestanden worden met behulp van specifieke commando’s geïmporteerd in de Neo4j graph database. Hierdoor kan bestaande data efficiënt hergebruikt worden en hoeft er geen complexe migratie vanuit andere systemen plaats te vinden.  
+## 🎯 Project Goals
 
-#### Mobilab & Care  
-Mobilab & Care is een onderzoeksgroep van de Thomas More University of Applied Sciences, actief binnen het expertisecentrum *Care and Well-being*. Hun doel is de levenskwaliteit van mensen met zorg- of ondersteuningsnoden te verbeteren. Dit bereiken zij door innovatief onderzoek in zowel fysieke, psychologische als sociale domeinen.  
+Mobilab & Care, a research group within Thomas More University of Applied Sciences' Care and Well-being Centre of Expertise, aims to improve quality of life for people with care or support needs. This project specifically focuses on:
 
-De onderzoeksgroep focust sterk op preventie, revalidatie en blijvende ondersteuning, met als ambitie om volledige maatschappelijke inclusie voor iedereen mogelijk te maken. Daarnaast ontwikkelen zij toepassingen voor de zorgsector in Vlaanderen, vaak in nauwe samenwerking met partners uit het werkveld.  
+- Storing and managing data about exoskeletons, sensors, and workplace risk assessment tools
+- Enabling efficient querying (e.g., "Which exoskeletons support shoulder movement?")
+- Making findings publicly accessible through a web interface
+- Visualizing data relationships in an intuitive graph format
+- Providing comprehensive data dashboards
 
-#### Historiek: Sense to eXion-project  
-Enkele jaren geleden bouwden DI-studenten voor Mobilab & Care een graph database in het kader van het *Sense to eXion*-project. Dit project onderzocht hulpmiddelen zoals risicotools, sensoren en exoskeletten die de bewegingen van werknemers ondersteunen of meten.  
+## 📊 Background
 
-De verzamelde data werd opgeslagen in een Neo4j graph database, en er werd een front-end ontwikkeld waarmee queries uitgevoerd konden worden. Enkele voorbeeldvragen die het systeem kon beantwoorden waren:  
+### Previous Implementation
+- A graph database (Neo4j) was built by DI-students for the sense to eXion project
+- Data was stored and a front-end was developed for querying
+- Example queries included finding exoskeletons by type or recommendations based on workplace needs
+- The website was completed but never went live
+- Both the database and source Excel files are available
 
-- *“Ik produceer exoskeletten van het volgende type, welke toepassingen zijn hiervoor relevant?”*  
-- *“In mijn bedrijf worden veel dozen gedragen. Hoe kan ik met een exoskelet het risico op fysieke klachten bij mijn werknemers verminderen?”*  
+### Current Status
+- The sense to eXion project has concluded
+- The **Jobtakels** project will build upon and extend this work
+- Time to reevaluate technology choices and decisions
 
-Hoewel de database bestond en ook de bijbehorende Excel-bestanden en website werden voorbereid, is het platform nooit officieel live gegaan.  
+## 🛣️ Project Roadmap
 
-#### Nieuwe fase: Jobtakels  
-Het *Sense to eXion*-project is inmiddels afgerond, maar met het nieuwe project **Jobtakels** wil men voortbouwen op de bestaande graph database. Hierbij worden de eerdere beslissingen opnieuw geëvalueerd: is Neo4j nog steeds de beste keuze, en hoe kan de database uitgebreid worden met nieuwe data en functionaliteiten?  
+### Phase 1: Database Technology Decision
+**Objective**: Determine the optimal database solution
 
-Daarom wordt dit project gestart met een herziening van de bestaande architectuur, de beschikbare data, en de mogelijkheden die Neo4j biedt om de database toekomstbestendig te maken.  
+- Review available data from Excel files
+- Build proof-of-concept implementations in multiple database technologies:
+  - Neo4j (existing solution evaluation)
+  - MongoDB (document-based approach)
+  - Relational databases (PostgreSQL/MySQL)
+- Consider web frontend requirements
+- Deliver findings with cost estimates and recommendations
 
-#### Voorlopig pad voor heropstart  
-De eerste stap bestaat uit:  
-1. Het verzamelen en ordenen van de beschikbare Excel-bestanden.  
-2. Het opzetten van een importproces naar Neo4j met herbruikbare commando’s.  
-3. Het in kaart brengen van de huidige structuur en hoe deze aansluit bij de noden van het nieuwe project.  
-4. Het verifiëren of Neo4j de juiste keuze blijft, of dat alternatieven overwogen moeten worden.  
-5. Relaties moeten snel en eenvoudig duidelijk zijn voor iedereen.
+### Phase 2: Database Rebuilding
+**Objective**: Implement production-ready database
 
-### Waarom een Graph Database  
-Een graph database maakt het mogelijk om relaties op een intuïtieve en visuele manier in kaart te brengen. In plaats van losse tabellen met complexe koppelingen (zoals in een relationele database), worden de gegevens opgeslagen als knopen (nodes) en verbindingen (edges). Hierdoor kan eenvoudig worden weergegeven welk exoskelet geschikt is voor een bepaald gebied of regio.  
+- Build the chosen database solution
+- Create efficient data import mechanisms
+- Develop database administration interface
+- Determine optimal hosting strategy for public access
+- Ensure scalability and maintainability
 
-Daarnaast maakt een graph database het mogelijk om verder te gaan dan eenvoudige koppelingen. Zo kan er bijvoorbeeld een netwerk worden opgebouwd waarin exoskeletten, regio’s, typen ondergrond, en zelfs specifieke gebruikersproblemen met elkaar in verband staan. Dit geeft niet alleen inzicht in welke oplossing waar toepasbaar is, maar ook in *waarom* die toepassing logisch is.  
+### Phase 3: Public Website
+**Objective**: Share findings with the public
 
-Een belangrijke meerwaarde is dat relaties in een graph database altijd een “eerste klas” onderdeel van de data zijn, en dus niet verstopt zitten in ingewikkelde query’s of join-tabellen. Dit maakt het eenvoudiger om:  
-- snel nieuwe verbanden en patronen te ontdekken,  
-- data uit te breiden met extra knopen of relaties zonder het bestaande model te breken,  
-- queries uit te voeren die meerdere lagen van relaties doorzoeken (bijvoorbeeld: *welke exoskeletten zijn toepasbaar bij personen die last hebben van hun schouder als ze hun handen hoger in de lucht moeten steken*).  
+- Develop a public-facing website (government-funded requirement)
+- Implement filtering and search functionality
+- Choose and justify web technology stack
+- Ensure client approval of technology choices
+- Make data easily accessible and explorable
 
-Bovendien is een graph database schaalbaar en flexibel. Naarmate de dataset groeit, kan er zonder grote herstructureringen nieuwe informatie worden toegevoegd. Dit is belangrijk omdat de context rond exoskeletten en hun toepassingen waarschijnlijk in de toekomst zal veranderen of complexer zal worden.  
+### Phase 4: Graph Visualization
+**Objective**: Visualize data relationships
 
-Kortom: een graph database is gekozen omdat deze niet alleen de relaties tussen exoskeletten en regio’s inzichtelijk maakt, maar ook ruimte biedt voor uitbreiding richting gebruikersdata, probleemtypen, en andere factoren die relevant zijn voor het vinden van de beste oplossingen.  
+- Create a graph-view plugin for the website
+- Display relationships (e.g., joints → supported exoskeletons)
+- Enable interactive exploration of connections
+- Maintain the original vision of relationship-based data exploration
 
-### Belangrijkste aandachtspunten  
-1. Gegevens (bijvoorbeeld uit Excel of handmatig ingevoerd) moeten eenvoudig toegevoegd kunnen worden.  
-2. De opgeslagen gegevens moeten gemakkelijk uitleesbaar en filterbaar zijn, zonder dat hiervoor veel tussenstappen nodig zijn.  
-3. Gebruikers mogen de gegevens enkel raadplegen; bewerken is niet toegestaan.  
-4. Het moet mogelijk zijn om eenvoudig queries uit te voeren op de database.
+### Phase 5: Data Dashboard
+**Objective**: Provide comprehensive data overview
 
-### Planning
-Deze week ga ik mijzelf bezig houden met onderzoeken van alle verschillende opties database, de voor en nadelen hiervan opzoeken om dat met effectieve simpele voorbeeld data al een logisch te analyseren of de voor en nadelen die ik eerder heb gevonden van toepassing zijn of niet. Ze gingen mij nog excel sturen en eenvoudige voorbeeld geven die ik kan importerne in Neo4 om de effectieve data te kunnen bekijken en analyseren.
+- Develop a standalone dashboard component
+- Present data without requiring complex queries
+- Design will be refined based on client feedback and relationship development
+- Focus on actionable insights and data overview
 
+## 📅 Timeline
+
+**Semester 1** - All phases to be completed
+
+## 🛠️ Technologies
+
+The project will involve:
+- **Database Design** - Choosing and implementing the optimal database solution
+- **Data Engineering** - Import mechanisms and data management
+- **Web Development** - Public-facing website and interfaces
+- **Data Visualization** - Graph views and dashboards
+
+## 📍 Workspace
+
+- **Analysis**: P200
+- **Development**: On campus at school
