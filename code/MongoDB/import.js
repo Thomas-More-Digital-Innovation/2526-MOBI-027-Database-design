@@ -1,10 +1,10 @@
-// import.js (CommonJS / werkt zonder "type":"module")
+require('dotenv').config(); // Load environment variables from .env file
 const fs = require("fs");
 const { MongoClient } = require("mongodb");
 
-const MONGO_URI = "mongodb://localhost:27017";
-const DB_NAME = "neo4j_import_test";
-const JSON_FILE = "./neo4j_query_table_data_2025-10-13.json";
+const MONGO_URI = process.env.MONGO_URI; // Get MONGO_URI from environment variables
+const DB_NAME = process.env.DB_NAME; // Get DB_NAME from environment variables
+const JSON_FILE = process.env.JSON_FILE; // Get JSON_FILE from environment variables
 
 async function run() {
   // 1) load file
@@ -13,7 +13,7 @@ async function run() {
 
   // 2) collect unique nodes per label
   const collections = {}; // label -> Map(identity -> doc)
-  const relatiesList = []; // CHANGED: Use array instead of Map to keep ALL relations
+  const relatiesList = []; // Use array instead of Map to keep ALL relations
 
   function saveNode(node) {
     if (!node) return;
@@ -35,10 +35,9 @@ async function run() {
     saveNode(m);
 
     if (r) {
-      // CHANGED: Push ALL relationships to array (no deduplication)
       const rela = {
         neo4jId: r.identity,
-        elementId: r.elementId, // Added for completeness
+        elementId: r.elementId,
         type: r.type,
         start: r.start,
         end: r.end,
@@ -60,7 +59,6 @@ async function run() {
   console.log(`🧾 unieke nodes per collectie (voor import):`, nodeCounts);
   console.log(`🔗 totaal relaties (inclusief eventuele duplicaten): ${relatiesList.length}`);
 
-  // Count unique neo4jId values to see if there are actual duplicates
   const uniqueNeo4jIds = new Set(relatiesList.map(r => r.neo4jId));
   console.log(`🔗 unieke neo4jId waarden: ${uniqueNeo4jIds.size}`);
   if (uniqueNeo4jIds.size < relatiesList.length) {
@@ -74,13 +72,8 @@ async function run() {
     const db = client.db(DB_NAME);
     console.log(`🗄️ Verbonden met DB '${DB_NAME}'`);
 
-    // nodes: use bulkWrite replaceOne upsert:true so duplicates don't fail
     for (const [label, map] of Object.entries(collections)) {
       const coll = db.collection(label);
-
-      // optional: clear collection first if you want a clean import
-      // await coll.deleteMany({});
-
       const ops = [];
       for (const doc of map.values()) {
         ops.push({
@@ -100,16 +93,11 @@ async function run() {
       }
     }
 
-    // relaties: write ALL relationships
     const relColl = db.collection("relaties");
-    
-    // OPTION 1: Clear old relations first for clean import (recommended)
     await relColl.deleteMany({});
     console.log("🗑️  Oude relaties verwijderd voor fresh import");
 
     if (relatiesList.length > 0) {
-      // CHANGED: Remove unique index constraint to allow all inserts
-      // Instead create a non-unique index for query performance
       try {
         await relColl.createIndex({ neo4jId: 1 }, { background: false });
         await relColl.createIndex({ type: 1 }, { background: false });
@@ -118,7 +106,6 @@ async function run() {
         // ignore index-creation errors about existing indexes
       }
 
-      // Insert all relationships
       try {
         const res = await relColl.insertMany(relatiesList, { ordered: false });
         console.log(`✅ 'relaties' inserted: ${res.insertedCount} van ${relatiesList.length}`);
@@ -134,7 +121,6 @@ async function run() {
       console.log("ℹ️ Geen relaties om te importeren.");
     }
 
-    // Verify final counts
     const finalRelatieCount = await relColl.countDocuments({});
     console.log(`📊 Totaal relaties in database: ${finalRelatieCount}`);
 

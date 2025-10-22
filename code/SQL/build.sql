@@ -91,7 +91,7 @@ CREATE TABLE HAS_PROPERTY (
 
 -- Create ASSISTS_IN relationship table
 CREATE TABLE ASSISTS_IN (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     exoId INT NOT NULL,
     dofId INT NOT NULL,
     aim VARCHAR(50),
@@ -172,6 +172,30 @@ CREATE TABLE GIVES_RESISTANCE_IN (
     INDEX idx_dof (dofId)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+-- Create GIVES_POSTURAL_SUPPORT_IN relationship table
+CREATE TABLE GIVES_POSTURAL_SUPPORT_IN (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    exoId INT NOT NULL,
+    dofId INT NOT NULL,
+    aim VARCHAR(50),
+    direction INT,
+    adjustable VARCHAR(50),
+    mechanism VARCHAR(100),
+    rangeAdjustable VARCHAR(50),
+    sizeAdjustable VARCHAR(50),
+    minAngle INT,
+    maxAngle INT,
+    lowerBoundMinAngle INT,
+    lowerBoundMaxAngle INT,
+    upperBoundMinAngle INT,
+    upperBoundMaxAngle INT,
+    FOREIGN KEY (exoId) REFERENCES Exo(exoId) ON DELETE CASCADE,
+    FOREIGN KEY (dofId) REFERENCES Dof(dofId) ON DELETE CASCADE,
+    UNIQUE KEY unique_exo_dof_postural (exoId, dofId),
+    INDEX idx_exo (exoId),
+    INDEX idx_dof (dofId)
+);
 -- Create AimType table
 CREATE TABLE AimType (
     aimTypeId INT AUTO_INCREMENT PRIMARY KEY,
