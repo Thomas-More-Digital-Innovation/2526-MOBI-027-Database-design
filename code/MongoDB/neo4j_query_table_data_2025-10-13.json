@@ -41,7 +41,7 @@
       "identity": 0,
       "labels": [
         "JointT"
-      ],
+      ], 
       "properties": {
         "jointTName": "Nek",
         "jointTId": 1
