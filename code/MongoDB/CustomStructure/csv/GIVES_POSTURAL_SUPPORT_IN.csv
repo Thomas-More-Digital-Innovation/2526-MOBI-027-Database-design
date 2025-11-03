@@ -1,0 +1,27 @@
+exoId;dofId;aim;adjustable;machanism;direction
+29;11;Nee;Nee;door blokkage;-1
+29;11;Nee;Nee;door blokkage;1
+29;12;Nee;Nee;door blokkage;-1
+29;12;Nee;Nee;door blokkage;1
+29;17;Nee;Nee;door blokkage;-1
+29;17;Nee;Nee;door blokkage;1
+29;18;Nee;Nee;door blokkage;-1
+29;18;Nee;Nee;door blokkage;1
+30;19;Ja;;door momentenevenwicht;-1
+30;19;Ja;;door blokkage;-1
+30;20;Ja;;door momentenevenwicht;-1
+34;19;Ja;;door momentenevenwicht;-1
+34;20;Ja;;door momentenevenwicht;-1
+35;10;Ja;;door momentenevenwicht;1
+35;13;Ja;;door momentenevenwicht;1
+53;10;Ja;;door momentenevenwicht;1
+53;13;Ja;;door momentenevenwicht;1
+53;26;Ja;;door momentenevenwicht;1
+53;26;Ja;Nee;door blokkage;1
+57;26;Ja;Ja;door blokkage;1
+63;10;Ja;;door momentenevenwicht;1
+63;13;Ja;;door momentenevenwicht;1
+64;19;Ja;;door momentenevenwicht;-1
+64;19;Ja;Nee;door blokkage;-1
+64;20;Ja;;door momentenevenwicht;-1
+65;16;Ja;;door momentenevenwicht;-1
