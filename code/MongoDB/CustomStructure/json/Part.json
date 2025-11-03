@@ -1,0 +1,57 @@
+[
+  {
+    "partId": 1,
+    "partName": "Hoofd",
+    "partType": "Body"
+  },
+  {
+    "partId": 2,
+    "partName": "Ground",
+    "partType": "Object"
+  },
+  {
+    "partId": 3,
+    "partName": "Hand",
+    "partType": "Body"
+  },
+  {
+    "partId": 4,
+    "partName": "Onderarm",
+    "partType": "Body"
+  },
+  {
+    "partId": 5,
+    "partName": "Bovenarm",
+    "partType": "Body"
+  },
+  {
+    "partId": 6,
+    "partName": "Romp",
+    "partType": "Body"
+  },
+  {
+    "partId": 8,
+    "partName": "Object",
+    "partType": "Object"
+  },
+  {
+    "partId": 9,
+    "partName": "Voet",
+    "partType": "Body"
+  },
+  {
+    "partId": 10,
+    "partName": "Bekken",
+    "partType": "Body"
+  },
+  {
+    "partId": 11,
+    "partName": "Bovenbeen",
+    "partType": "Body"
+  },
+  {
+    "partId": 12,
+    "partName": "Onderbeen",
+    "partType": "Body"
+  }
+]

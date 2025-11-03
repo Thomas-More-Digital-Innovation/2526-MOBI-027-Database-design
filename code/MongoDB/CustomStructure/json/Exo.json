@@ -1,0 +1,344 @@
+[
+  {
+    "exoId": 1,
+    "exoDescription": "De Carrysuit is een passief exoskelet dat de handen, armen, schouders en rug ontlast bij het dragen of vasthouden van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "CarrySuit",
+    "exoManufacturer": "Auxivo"
+  },
+  {
+    "exoId": 2,
+    "exoDescription": "De Paexo Shoulder is een passief exoskelet dat de schouders ontlast bij bovenhands werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Paexo Shoulder",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 3,
+    "exoDescription": "De Paexo Neck is een passief exoskelet dat de nek ontlast bij het statisch achteroverbuigen van het hoofd.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Paexo Neck",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 4,
+    "exoDescription": "De Paexo Wrist is een passief exosuit dat de pols ondersteunt bij het hanteren van lasten.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "eenzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Paexo Wrist",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 5,
+    "exoDescription": "De SuitX BackX is een passief exoskelet dat de rug en heupen ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "SuitX BackX",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 6,
+    "exoDescription": "De Mate-XT is een passief exoskelet dat de schouders ontlast bij bovenhands werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Mate-XT",
+    "exoManufacturer": "Comau"
+  },
+  {
+    "exoId": 7,
+    "exoDescription": "De Paexo Back is een passief exoskelet dat de rug en heupen ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Paexo Back",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 8,
+    "exoDescription": "De Paexo Soft Back is een passief exosuit dat de onderrug ontlast bij het staan en het dragen van lichtere lasten zoals bv. bij langdurig staand assemblagewerk, orderpicking, het hanteren van lichtere lasten en pakketbezorging.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Paexo Soft Back",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 9,
+    "exoDescription": "De Paexo Thumb is een passief exoskelet dat de duim ontlast bij het vastklikken, inpluggen en indrukken van items tijdens de montagewerken.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "eenzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Paexo Thumb",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 10,
+    "exoDescription": "De SuitX LegX is een passief exoskelet dat de knie�n ontlast tijdens het herhaaldelijk of langdurig door de benen buigen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "SuitX LegX",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 11,
+    "exoDescription": "De Moon is een passief exoskelet dat de nek ontlast bij het statisch achteroverbuigen van het hoofd.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Moon",
+    "exoManufacturer": "HMT"
+  },
+  {
+    "exoId": 12,
+    "exoDescription": "De Plum is een passief exoskelet dat de schouders ontlast bij bovenhands werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Plum",
+    "exoManufacturer": "HMT"
+  },
+  {
+    "exoId": 13,
+    "exoDescription": "De Light is een passief exoskelet dat de schouders en ellebogen ontlast bij repetitieve armbewegingen en bij houdingen waarbij men de armen langdurig voor zich uit moet houden.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Light",
+    "exoManufacturer": "HMT"
+  },
+  {
+    "exoId": 14,
+    "exoDescription": "De Hapo MS is een passief exoskelet dat de schouders en ellebogen ontlast bij repetitieve armbewegingen en bij houdingen waarbij men de armen langdurig voor zich uit moet houden.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Hapo MS",
+    "exoManufacturer": "Ergosant�"
+  },
+  {
+    "exoId": 15,
+    "exoDescription": "De Hapo Posture Harness is een passief exoskelet dat de rug en de heup ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Hapo Posture Harness",
+    "exoManufacturer": "Ergosant�"
+  },
+  {
+    "exoId": 16,
+    "exoDescription": "De Ironhand is een actief exosuit die de hand en onderarm ontlast door het gripversterkende effect van de handschoen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "eenzijdig",
+    "exoActivePassive": "actief",
+    "exoName": "Ironhand",
+    "exoManufacturer": "Bioservo Technologies"
+  },
+  {
+    "exoId": 17,
+    "exoDescription": "De SuitX ShoulderX is een passief exoskelet dat de schouders ontlast bij bovenhands werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "SuitX ShoulderX",
+    "exoManufacturer": "Ottobock Bionic Exoskeletons"
+  },
+  {
+    "exoId": 18,
+    "exoDescription": "De Archelis for Medical is een passief exoskelet dat de benen en onderrug ontlast bij langdurig staand werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Archelis for Medical",
+    "exoManufacturer": "Archelis Inc"
+  },
+  {
+    "exoId": 19,
+    "exoDescription": "De AGADEXO Shoulder is een semi-actief exoskelet dat de schouder ontlast bij het manueel hanteren van materialen in de productie, logistiek en detailhandel.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "actief",
+    "exoName": "AGADEXO Shoulder",
+    "exoManufacturer": "AGADE"
+  },
+  {
+    "exoId": 20,
+    "exoDescription": "De Exowaist is een passief exoskelet dat de rug en de heup ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Exowaist",
+    "exoManufacturer": "Cyber Human Systems"
+  },
+  {
+    "exoId": 21,
+    "exoDescription": "De Exoshoulder is een passief exoskelet dat de schouders ontlast door de armen te ondersteunen bij repetitieve taken met de bovenste ledematen in verhoogde posities (ook voor horizontale verplaatsing van lasten).",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Exoshoulder",
+    "exoManufacturer": "Cyber Human Systems"
+  },
+  {
+    "exoId": 22,
+    "exoDescription": "De Exosoft is een passief exosuit dat de rug en de heup ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Exosoft",
+    "exoManufacturer": "Cyber Human Systems"
+  },
+  {
+    "exoId": 23,
+    "exoDescription": "De Atlas is een passief exoskelet dat de handen, armen, schouders en rug ontlast bij het dragen of vasthouden van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Atlas",
+    "exoManufacturer": "Exomys - Augmented Humanity GmbH"
+  },
+  {
+    "exoId": 24,
+    "exoDescription": "De Back Protect is een passief exoskelet dat een goede tilhouding stimuleert om zo rugklachten voorkomen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Back Protect",
+    "exoManufacturer": "BeMedico"
+  },
+  {
+    "exoId": 25,
+    "exoDescription": "De CareExo Lift is een passief exosuit, specifiek voor de zorg ontwikkeld, dat de rug, heup en knie�n ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij pati�ntentransfers.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "CareExo Lift",
+    "exoManufacturer": "Hunic"
+  },
+  {
+    "exoId": 26,
+    "exoDescription": "De SoftExo Lift is een passief exosuit dat de rug, heup en knie�n ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "SoftExo Lift",
+    "exoManufacturer": "Hunic"
+  },
+  {
+    "exoId": 27,
+    "exoDescription": "De SoftExo Hold is een passief exosuit dat de rug ontlast bij een gedwongen houding zoals bv. bij langdurig staan en assemblagewerk.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "SoftExo Hold",
+    "exoManufacturer": "Hunic"
+  },
+  {
+    "exoId": 28,
+    "exoDescription": "De SoftExo Carry is een passief exoskelet dat de onderrug ontlast bij het dragen van lasten waarbij maximale bewegingsvrijheid vereist is zoals bv. bij pakketbezorging, magazijnwerk en de bouw.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "SoftExo Carry",
+    "exoManufacturer": "Hunic"
+  },
+  {
+    "exoId": 29,
+    "exoDescription": "De Chairless Chair is een passief exoskelet dat de benen en onderrug ontlast doordat er snel, gemakkelijk en flexibel gewisseld kan worden tussen zitten, staan en lopen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Chairless Chair",
+    "exoManufacturer": "Noonee"
+  },
+  {
+    "exoId": 30,
+    "exoDescription": "De Cray X is een actief exoskelet dat de rug en heup ontlast bij het tillen van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "actief",
+    "exoName": "Cray X",
+    "exoManufacturer": "German Bionic"
+  },
+  {
+    "exoId": 31,
+    "exoDescription": "De EVO is een passief exoskelet dat de schouders ontlast bij bovenhands werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "EVO",
+    "exoManufacturer": "Ekso Bionics"
+  },
+  {
+    "exoId": 32,
+    "exoDescription": "De HeroWear Apex is een passief exosuit dat de rug en de heup ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "HeroWear Apex",
+    "exoManufacturer": "HeroWear"
+  },
+  {
+    "exoId": 33,
+    "exoDescription": "De Laevo Flex is een passief exoskelet dat de rug en heupen ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Laevo Flex",
+    "exoManufacturer": "Laevo"
+  },
+  {
+    "exoId": 34,
+    "exoDescription": "De LEX Bionic Chair is een passief exoskelet dat de benen en onderrug ontlast doordat er snel, gemakkelijk en flexibel gewisseld kan worden tussen zitten, staan en lopen.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "LEX Bionic Chair",
+    "exoManufacturer": "Astride Bionics"
+  },
+  {
+    "exoId": 35,
+    "exoDescription": "De LiftSuit is een passief exosuit dat de rug en de heup ontlast bij het statisch of repetitief vooroverbuigen van de romp zoals bv. bij het tillen van zware voorwerpen.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "LiftSuit 2.0",
+    "exoManufacturer": "Auxivo"
+  },
+  {
+    "exoId": 36,
+    "exoDescription": "De Skelex 360-XFR is een passief exoskelet dat de schouders ontlast bij bovenhands werk.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Skelex 360-XFR",
+    "exoManufacturer": "Skelex"
+  },
+  {
+    "exoId": 37,
+    "exoDescription": "De Skelex Neck Support is een passief exoskelet dat de nek ontlast bij het statisch achteroverbuigen van het hoofd.",
+    "exoMaterial": "harde materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "Skelex Neck Support",
+    "exoManufacturer": "Skelex"
+  },
+  {
+    "exoId": 38,
+    "exoDescription": "De ProFlex 1100SF is een passief exosuit dat de onderrug ontlast bij het staan en het hanteren van lichtere lasten zoals bv. bij langdurig staand assemblagewerk, orderpicking, het hanteren van lichtere lasten en pakketbezorging.",
+    "exoMaterial": "zachte materialen",
+    "exoOneTwoSided": "dubbelzijdig",
+    "exoActivePassive": "passief",
+    "exoName": "ProFlex 1100SF",
+    "exoManufacturer": "Ergodyne"
+  }
+]

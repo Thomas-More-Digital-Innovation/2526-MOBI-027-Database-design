@@ -1,0 +1,107 @@
+sknId;sknName;sknNameEn;sknIsSelectable
+201;staan;standing;x
+201;staan;standing;x
+201;staan;standing;x
+201;staan;standing;x
+201;staan;standing;x
+201;staan;standing;x
+202;wandelen;walking;x
+203;knielen, hurken (statisch);kneeling / crouching static;x
+204;knielen, hurken (repetitief);kneeling / crouching repetitive;x
+301;rechtop;upright;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+302;voorovergebogen statisch;bent forward static;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+303;voorovergebogen repetitief;bent forward repetitive;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+304;sterk voorovergebogen statisch;strongly bent forward static;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+305;sterk voorovergebogen repetitief;strongly bent forward repetitive;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+401;elleboog op of boven schouderniveau statisch;elbow at or above shoulder level static;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+402;elleboog op of boven schouderniveau repetitief;elbow at or above shoulder level repetitive;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+403;handen boven hoofdniveau statisch;hands above head level static;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+404;handen boven hoofdniveau repetitief;hands above head level repetitive;x
+406;statische acties bovenste lidmaat;upper limb static actions;x
+406;statische acties bovenste lidmaat;upper limb static actions;x
+406;statische acties bovenste lidmaat;upper limb static actions;x
+407;dynamische acties bovenste lidmaat;upper limb dynamic actions;x
+407;dynamische acties bovenste lidmaat;upper limb dynamic actions;x
+407;dynamische acties bovenste lidmaat;upper limb dynamic actions;x
+601;pols ulnaire deviatie > 15? of radiale deviatie > 20?;wrist ulnar deviation > 15? or radial deviation > 20?;x
+602;pols flexie/extensie > 45?;wrist flexion/extension > 45?;x

@@ -1,0 +1,135 @@
+[
+  {
+    "dofId": 1,
+    "nameNeg": "extensie van de rug",
+    "dofDirection": "ExtFlex",
+    "namePos": "flexie van de rug",
+    "dofName": "Flexie(+)/Extensie(-)_Rug"
+  },
+  {
+    "dofId": 2,
+    "nameNeg": "lateroflexie van de rug naar links",
+    "dofDirection": "AddAbd",
+    "namePos": "lateroflexie van de rug naar rechts",
+    "dofName": "Lateroflexie (Rechts(+)/Links(-))_Rug"
+  },
+  {
+    "dofId": 3,
+    "nameNeg": "rotatie van de rug naar links",
+    "dofDirection": "EndoExo",
+    "namePos": "rotatie van de rug naar rechts",
+    "dofName": "Rotatie (Rechts(+)/Links(-))_Rug"
+  },
+  {
+    "dofId": 4,
+    "nameNeg": "extensie van de heup",
+    "dofDirection": "ExtFlex",
+    "namePos": "flexie van de heup",
+    "dofName": "Flexie(+)/Extensie(-)_Heup"
+  },
+  {
+    "dofId": 5,
+    "nameNeg": "adductie van de heup",
+    "dofDirection": "AddAbd",
+    "namePos": "abductie van de heup",
+    "dofName": "Abductie(+)/Adductie(-)_Heup"
+  },
+  {
+    "dofId": 6,
+    "nameNeg": "endorotatie van de heup",
+    "dofDirection": "EndoExo",
+    "namePos": "exorotatie van de heup",
+    "dofName": "Exo(+)/Endo(-)rotatie_Heup"
+  },
+  {
+    "dofId": 9,
+    "nameNeg": "extensie van de nek",
+    "dofDirection": "ExtFlex",
+    "namePos": "flexie van de nek",
+    "dofName": "Flexie(+)/Extensie(-)_Nek"
+  },
+  {
+    "dofId": 10,
+    "nameNeg": "lateroflexie van de nek naar links",
+    "dofDirection": "AddAbd",
+    "namePos": "lateroflexie van de nek naar rechts",
+    "dofName": "Lateroflexie (Rechts(+)/Links(-))_Nek"
+  },
+  {
+    "dofId": 11,
+    "nameNeg": "rotatie van de nek naar links",
+    "dofDirection": "EndoExo",
+    "namePos": "rotatie van de nek naar rechts",
+    "dofName": "Rotatie (Rechts(+)/Links(-))_Nek"
+  },
+  {
+    "dofId": 12,
+    "nameNeg": "retroflexie van de schouder",
+    "dofDirection": "ExtFlex",
+    "namePos": "anteflexie van de schouder",
+    "dofName": "Anteflexie(+)/Retroflexie(-)_Schouder"
+  },
+  {
+    "dofId": 13,
+    "nameNeg": "adductie van de schouder",
+    "dofDirection": "AddAbd",
+    "namePos": "abductie van de schouder",
+    "dofName": "Abductie(+)/Adductie(-)_Schouder"
+  },
+  {
+    "dofId": 14,
+    "nameNeg": "endorotatie van de schouder",
+    "dofDirection": "EndoExo",
+    "namePos": "exorotatie van de schouder",
+    "dofName": "Exo(+)/Endo(-)rotatie_Schouder"
+  },
+  {
+    "dofId": 15,
+    "nameNeg": "extensie van de elleboog",
+    "dofDirection": "ExtFlex",
+    "namePos": "flexie van de elleboog",
+    "dofName": "Flexie(+)/Extensie(-)_Elleboog"
+  },
+  {
+    "dofId": 16,
+    "nameNeg": "pronatie van de pols",
+    "dofDirection": "EndoExo",
+    "namePos": "supinatie van de pols",
+    "dofName": "Supinatie(+)/Pronatie(-)_Pols"
+  },
+  {
+    "dofId": 17,
+    "nameNeg": "dorsiflexie van de pols",
+    "dofDirection": "ExtFlex",
+    "namePos": "palmairflexie van de pols",
+    "dofName": "Palmair(+)/Dorsi(-)flexie_Pols"
+  },
+  {
+    "dofId": 18,
+    "nameNeg": "ulnaire deviatie van de pols",
+    "dofDirection": "AddAbd",
+    "namePos": "radiale deviatie van de pols",
+    "dofName": "Radiale(+)/Ulnaire(-) Deviatie_Pols"
+  },
+  {
+    "dofId": 19,
+    "nameNeg": "extensie van de knie",
+    "dofDirection": "ExtFlex",
+    "namePos": "flexie van de knie",
+    "dofName": "Flexie(+)/Extensie(-)_Knie"
+  },
+  {
+    "dofId": 20,
+    "nameNeg": "endorotatie van de knie",
+    "dofDirection": "EndoExo",
+    "namePos": "exorotatie van de knie",
+    "dofName": "Exo(+)/Endo(-)rotatie_Knie"
+  },
+  {
+    "dofId": 21,
+    "nameNeg": "plantairflexie van de enkel",
+    "dofDirection": "ExtFlex",
+    "namePos": "dorsiflexie van de enkel",
+    "dofName": "Dorsi(+)/Plantair(-)flexie_Enkel"
+  }
+]

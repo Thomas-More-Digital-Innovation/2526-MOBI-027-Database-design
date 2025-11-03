@@ -1,0 +1,532 @@
+[
+  {
+    "exoId": 36,
+    "sknId": 93,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 46,
+    "sknId": 93,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 55,
+    "sknId": 93,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 57,
+    "sknId": 93,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 62,
+    "sknId": 93,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 66,
+    "sknId": 93,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 58,
+    "sknId": 94,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 38,
+    "sknId": 95,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 38,
+    "sknId": 96,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 43,
+    "sknId": 103,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 33,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 35,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 43,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 46,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 48,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 50,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 53,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 54,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 55,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 57,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 58,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 60,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 61,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 62,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 63,
+    "sknId": 104,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 33,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 35,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 43,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 48,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 50,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 53,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 54,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 55,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 58,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 60,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 61,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 63,
+    "sknId": 105,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 33,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 35,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 43,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 48,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 50,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 53,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 54,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 58,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 60,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 61,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 63,
+    "sknId": 106,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 33,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 35,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 43,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 48,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 50,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 53,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 54,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 58,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 60,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 61,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 63,
+    "sknId": 107,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 30,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 34,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 40,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 41,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 42,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 45,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 49,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 59,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 64,
+    "sknId": 108,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 30,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 34,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 40,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 41,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 42,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 45,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 49,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 59,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 64,
+    "sknId": 109,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 30,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 31,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 34,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 39,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 40,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 41,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 42,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 45,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 49,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 59,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 64,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 65,
+    "sknId": 110,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 30,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 34,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 40,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 41,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 42,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 45,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 49,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 59,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 64,
+    "sknId": 111,
+    "sknCategory": "HAS_AIM_nevendoel"
+  },
+  {
+    "exoId": 41,
+    "sknId": 113,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 42,
+    "sknId": 113,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 49,
+    "sknId": 113,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 41,
+    "sknId": 114,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 42,
+    "sknId": 114,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 49,
+    "sknId": 114,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 32,
+    "sknId": 124,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  },
+  {
+    "exoId": 32,
+    "sknId": 125,
+    "sknCategory": "HAS_AIM_hoofddoel"
+  }
+]

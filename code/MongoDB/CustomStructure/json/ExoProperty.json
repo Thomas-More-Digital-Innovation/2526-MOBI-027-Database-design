@@ -1,0 +1,22 @@
+[
+  {
+    "exoPropertyId": 140,
+    "exoPropertyName": "compact"
+  },
+  {
+    "exoPropertyId": 141,
+    "exoPropertyName": "stofbestendig"
+  },
+  {
+    "exoPropertyId": 142,
+    "exoPropertyName": "waterbestendig"
+  },
+  {
+    "exoPropertyId": 143,
+    "exoPropertyName": "ondersteuningsgraad"
+  },
+  {
+    "exoPropertyId": 144,
+    "exoPropertyName": "combineerbaarheidMetBpm"
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "exoId": 29,
+    "dofId": 11,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": -1
+  },
+  {
+    "exoId": 29,
+    "dofId": 11,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": 1
+  },
+  {
+    "exoId": 29,
+    "dofId": 12,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": -1
+  },
+  {
+    "exoId": 29,
+    "dofId": 12,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": 1
+  },
+  {
+    "exoId": 29,
+    "dofId": 17,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": -1
+  },
+  {
+    "exoId": 29,
+    "dofId": 17,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": 1
+  },
+  {
+    "exoId": 29,
+    "dofId": 18,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": -1
+  },
+  {
+    "exoId": 29,
+    "dofId": 18,
+    "aim": "Nee",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": 1
+  },
+  {
+    "exoId": 30,
+    "dofId": 19,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  },
+  {
+    "exoId": 30,
+    "dofId": 19,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door blokkage",
+    "direction": -1
+  },
+  {
+    "exoId": 30,
+    "dofId": 20,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  },
+  {
+    "exoId": 34,
+    "dofId": 19,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  },
+  {
+    "exoId": 34,
+    "dofId": 20,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  },
+  {
+    "exoId": 35,
+    "dofId": 10,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 35,
+    "dofId": 13,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 53,
+    "dofId": 10,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 53,
+    "dofId": 13,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 53,
+    "dofId": 26,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 53,
+    "dofId": 26,
+    "aim": "Ja",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": 1
+  },
+  {
+    "exoId": 57,
+    "dofId": 26,
+    "aim": "Ja",
+    "adjustable": "Ja",
+    "machanism": "door blokkage",
+    "direction": 1
+  },
+  {
+    "exoId": 63,
+    "dofId": 10,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 63,
+    "dofId": 13,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": 1
+  },
+  {
+    "exoId": 64,
+    "dofId": 19,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  },
+  {
+    "exoId": 64,
+    "dofId": 19,
+    "aim": "Ja",
+    "adjustable": "Nee",
+    "machanism": "door blokkage",
+    "direction": -1
+  },
+  {
+    "exoId": 64,
+    "dofId": 20,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  },
+  {
+    "exoId": 65,
+    "dofId": 16,
+    "aim": "Ja",
+    "adjustable": "",
+    "machanism": "door momentenevenwicht",
+    "direction": -1
+  }
+]

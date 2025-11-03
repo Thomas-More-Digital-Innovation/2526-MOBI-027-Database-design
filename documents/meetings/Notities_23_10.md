@@ -9,7 +9,6 @@ Ook zal dit voor later exporteren naar excel met deze structuur lastiger gaan om
 
 Daarom heb ik uitgelegd dat ik denk dat het voor hun beter is om de csv bestanden die ze nu gebruiken te gaan hergebruiken met een lichtelijke aanpassing, relaties duidelijk scheiden zodat deze voor import eenvoudiger zijn. 
 
-
 ### Uitgelegde alternatieve oplossing
 Het is mogelijk op een eenvoudige manier om de geëxporteerde JSON van Neo4J te importeren naar MongoDB, als er dan vanuit MongoDB de gegevens geëxporteerd worden, is de JSON al veel overzichtelijker en simpelder en kan deze in tegenstelling tot de JSON van Neo4J eenvoudig in een excel tabel omgezet worden wat dan ook weer voor meer duidelijkheid zorgt voor personen met minder kennis over JSON.
 
