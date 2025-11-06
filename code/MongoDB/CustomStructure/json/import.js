@@ -16,6 +16,7 @@ async function importAllJSONs() {
 
     for (const file of files) {
       const collectionName = path.basename(file, ".json");
+      const isRelation = collectionName.includes("_");
       const filePath = path.join(".", file);
 
       const fileContent = fs.readFileSync(filePath, "utf8");
@@ -29,6 +30,20 @@ async function importAllJSONs() {
 
       if (!Array.isArray(records)) {
         records = [records];
+      }
+
+      // Process records to use first property as _id for non-relation files
+      if (!isRelation && records.length > 0) {
+        records = records.map(record => {
+          const firstKey = Object.keys(record)[0];
+          if (firstKey && record[firstKey] !== undefined) {
+            const newRecord = { ...record };
+            newRecord._id = parseInt(record[firstKey]) || record[firstKey];
+            delete newRecord[firstKey];
+            return newRecord;
+          }
+          return record;
+        });
       }
 
       if (records.length > 0) {

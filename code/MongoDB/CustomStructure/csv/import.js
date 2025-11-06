@@ -16,7 +16,8 @@ async function importAllCSVs() {
 
     for (const file of files) {
       const collectionName = path.basename(file, ".csv");
-      const records = await parseCSV(file);
+      const isRelation = collectionName.includes("_");
+      const records = await parseCSV(file, isRelation);
 
       if (records.length > 0) {
         const collection = db.collection(collectionName);
@@ -33,12 +34,30 @@ async function importAllCSVs() {
   }
 }
 
-function parseCSV(filePath) {
+function parseCSV(filePath, isRelation) {
   return new Promise((resolve, reject) => {
     const results = [];
+    let firstColumnName = null;
+
     fs.createReadStream(filePath)
       .pipe(csv({ separator: ';' }))
-      .on("data", (data) => results.push(data))
+      .on("data", (data) => {
+        // Only replace _id for non-relation files
+        if (!isRelation) {
+          // Get the first column name from the first row
+          if (!firstColumnName) {
+            firstColumnName = Object.keys(data)[0];
+          }
+
+          // Use the first column as _id
+          if (firstColumnName && data[firstColumnName]) {
+            data._id = parseInt(data[firstColumnName]) || data[firstColumnName];
+            delete data[firstColumnName];
+          }
+        }
+        
+        results.push(data);
+      })
       .on("end", () => resolve(results))
       .on("error", (err) => reject(err));
   });
