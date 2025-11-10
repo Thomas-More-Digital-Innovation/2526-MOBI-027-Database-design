@@ -2,8 +2,8 @@
 flowchart TD
     A[CSV bestand push naar GitHub] --> B[GitHub Action triggered]
     B --> C[script CSV -> PostgreSQL]
-    C --> D[(PosgreSQL - Neon DB)]
+    C --> D[(PostgreSQL - Neon DB)]
     D --> E[script Postgres -> Neo4j]
-    E --> F(Neo4j Graph Database)]
+    E --> F[(Neo4j Graph Database)]
 
 ```
