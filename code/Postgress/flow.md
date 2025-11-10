@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[CSV bestand push naar GitHub] --> B[GitHub Action triggered]
+    A[CSV push naar GitHub] --> B[GitHub Action triggered]
     B --> C[Python script draait]
     C --> D[(PostgreSQL - Neon DB)]
     D --> E[Data export / sync script]
